@@ -16,7 +16,7 @@ jobs:
       - docker/check
       - docker/build:
           image: ethnelson/home-site
-      - docker/publish:
+      - docker/push:
           digest-path: /tmp/digest.txt
           image: ethnelson/home-site
 
