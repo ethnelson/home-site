@@ -5,7 +5,7 @@ version: 2.1
 # See: https://circleci.com/docs/2.0/orb-intro/
 orbs:
   node: circleci/node@4.9.0
-  docker: circleci/docker2.0.1
+  docker: circleci/docker@2.0.1
 
 jobs: 
   build-and-push:
