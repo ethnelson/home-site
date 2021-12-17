@@ -11,7 +11,8 @@ jobs:
   build-and-push:
     executor: docker/docker
     steps:
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 20.10.11
       - checkout
       - docker/check
       - docker/build:
