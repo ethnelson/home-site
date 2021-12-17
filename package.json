@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage && cd client && npm run test",
+    "postinstall": "cd client && npm install",
+    "test": "jest --coverage && cd client && npm test",
     "start": "node server/index.js",
     "build": "cd client && npm install && npm run build"
   },
