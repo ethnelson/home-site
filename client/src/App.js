@@ -16,9 +16,9 @@ class App extends Component {
       <div className="App">
         <Navigation />
           <Routes>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" element={<Home />} />
 
-            <Route path="/projectArch" component={ProjectArchive} />
+            <Route path="/projectArch" element={<ProjectArchive />} />
           </Routes>
       </div>
     );
