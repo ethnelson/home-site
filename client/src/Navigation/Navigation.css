@@ -3,6 +3,10 @@
       .navigation {
           display: flex;
           flex-direction: row;
+
+          position: fixed;
+          top: 0;
+          width: 100%;
       }
       
       .navigation a {
@@ -12,7 +16,7 @@
           background-color: transparent;
           border: none;
       }
-      
+
       .navigation a:not(.coffee) {
           border-style: double;
           border-color: #5B6065;
