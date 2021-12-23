@@ -1,8 +1,20 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  text-align: center;
+  width: inherit;
+  height: inherit;
+}
+
+/*.App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,7 +23,7 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+}*/
 
 .App-header {
   background-color: #282c34;
@@ -36,3 +48,26 @@
     transform: rotate(360deg);
   }
 }
+
+.navigation {
+  background-color: #2F3031;
+
+}
+/* DESKTOP FORMATTING */
+@media only screen and (min-width: 700px) {
+  .navigation {
+    flex-direction: row;
+  }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                           MOBILE FORMATTING                                */
+/* -------------------------------------------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .App {
+    flex-direction: column;
+  }
+}
+
+

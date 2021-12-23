@@ -1,8 +1,33 @@
-import React from "react";
-import logo from './logo.svg';
+import React, { Component } from "react";
+import {
+  Route,
+  Routes
+} from "react-router-dom";
+
+import Home from './Home/Home';
+import Navigation from './Navigation/Navigation';
+import ProjectArchive from './ProjectArchive/ProjectArchive';
 import './App.css';
 
-function App() {
+// -------------------------------------------------------------------------- //
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Navigation />
+          <Routes>
+            <Route exact path="/" component={Home} />
+
+            <Route path="/projectArch" component={ProjectArchive} />
+          </Routes>
+      </div>
+    );
+  }
+}
+
+
+/*
+function AppThang() {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
@@ -14,12 +39,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
+        <img src={logo} className="App-logo" alt="logo" />
         <p>{!data ? "Loading..." : data}</p>
         <p>ooo react</p>
       </header>
     </div>
   );
 }
-
+*/
 export default App;
