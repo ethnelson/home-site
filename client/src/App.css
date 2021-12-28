@@ -39,23 +39,6 @@ body {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.navigation {
-  background-color: #2F3031;
-
-}
 /* DESKTOP FORMATTING */
 @media only screen and (min-width: 700px) {
   .navigation {

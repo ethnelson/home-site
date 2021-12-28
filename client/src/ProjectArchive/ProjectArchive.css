@@ -20,12 +20,16 @@
         background-color: #5B6065;
 
         border-radius: 10px;
+
+        gap: 5px;
     }
 
     .project-icon {
         width: 100px;
         height: 100px;
         border-radius: 50%;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+        background-color: white;
     }
 
     .project-details {
