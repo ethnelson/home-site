@@ -40,3 +40,46 @@
           align-self: center;
       }
   }
+
+  @media only screen and (max-width: 1500px) and (min-width: 601px) {
+      .navigation {
+          display: flex-box;
+          flex-direction: column;
+          justify-content: center;
+          align-self: center;
+
+          position: fixed;
+
+          left: 0;
+          height: 98%;
+
+          background-color: rgba(47, 48, 49, 1);
+
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+      }
+
+      .navigation a {
+          display: flex;
+          flex-grow: 1;
+          background-color: transparent;
+          color: White;
+          text-decoration: none;
+
+      }
+
+      .navigation a:hover {
+          color: yellow;
+      }
+
+      .navigation img:not(.coffee-dark) {
+          width: 30px;
+          height: 30px;
+      }
+
+      .navigation .coffee-dark {
+          width: 40px;
+          height: 40px;
+          align-self: center;
+      }
+  }

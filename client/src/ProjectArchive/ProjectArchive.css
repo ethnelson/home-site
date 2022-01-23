@@ -9,7 +9,7 @@
         gap: 10px;
     }
 
-    .project-snippet {
+    .project-list-item {
         display: flex;
         flex-direction: row;
         justify-content: baseline;
@@ -23,27 +23,44 @@
 
         gap: 5px;
     }
+    
+    .noProjectoMr {
+        display: flex;
+        justify-content: center;
+    }
+}
 
-    .project-icon {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
-        background-color: white;
+@media only screen and (min-width: 601px) and (max-width: 1920px) {
+    .project-archive {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background-color: #413f45;
+        padding: 20px;
+        align-content: flex-start;
+        justify-content: left;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        
     }
 
-    .project-details {
+    .project-list-item {
         display: flex;
         flex-direction: column;
-        flex-grow: 2;
-        justify-content: space-around;
-        gap: 10px;
+        justify-content: center;
+        border-style: solid;
+        justify-content: center;
+
+        width: 150px;
+        height: 150px;
     }
 
-    .project-details p, h3 {
-        align-self: flex-start;
-        text-align: start;
-        margin: 0;
-        color: white;
+    .project-name {
+        text-align: center;
+    }
+    .noProjectoMr {
+        display: flex;
+        color: rgb(160, 160, 160);
     }
 }

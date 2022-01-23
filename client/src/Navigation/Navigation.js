@@ -17,8 +17,6 @@ class Navigation extends Component {
         <HomeButton />
         <ProjectArchive />
         <CodeLink />
-        <ColorSwitch />
-        <Coffee />
       </div>
     );
   }
@@ -27,11 +25,7 @@ class Navigation extends Component {
 class HomeButton extends Component {
   render() {
     return (
-//      <button className="home-button">
-        <NavLink className="home-button" to="/">
-          <img src={homeIconDark} className="home-icon-dark" alt="home" />
-        </NavLink>
-//      </button>
+        <NavLink className="home-button" to="/">Home</NavLink>
     );
   }
 }
@@ -39,9 +33,7 @@ class HomeButton extends Component {
 class ProjectArchive extends Component {
   render() {
     return (
-      <NavLink className="project-arch" to="/projectArch">
-        <img src={projectArchDark} className="project-arch-dark" alt="projects" />
-      </NavLink>
+      <NavLink className="project-arch" smooth to="/projectArch">Projects</NavLink>
     );
   }
 }
@@ -49,19 +41,7 @@ class ProjectArchive extends Component {
 class CodeLink extends Component {
   render() {
     return (
-      <a className="code-link" href="https://github.com/ethnelson">
-        <img src={codeLinkDark} className="code-link-dark" alt="code" />
-      </a>
-    );
-  }
-}
-
-class ColorSwitch extends Component {
-  render() {
-    return (
-      <a className="color-switch">
-        <img src={colorSwitchDark} className="color-switch-dark" alt="color mode" />
-      </a>
+      <a className="code-link" href="https://github.com/ethnelson">Github</a>
     );
   }
 }
