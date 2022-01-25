@@ -7,8 +7,16 @@
         min-height: 100vh;
         background-color: #413f45;
         padding: 20px;
-        align-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .project-list {
+        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
+        align-content: center;
+
         flex-wrap: wrap;
         gap: 30px;
     }
@@ -18,7 +26,6 @@
         flex-direction: column;
         justify-content: center;
         border-style: solid;
-        justify-content: center;
 
         width: 100px;
         height: 100px;
@@ -43,6 +50,16 @@
         padding: 20px;
         align-content: center;
         justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .project-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+
         flex-wrap: wrap;
         gap: 30px;
     }
