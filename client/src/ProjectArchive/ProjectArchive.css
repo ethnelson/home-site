@@ -3,25 +3,29 @@
 @media only screen and (max-width: 600px) {
     .project-archive {
         display: flex;
-        flex-direction: column;
-
-        margin-top: 60px;
-        gap: 10px;
+        width: 100vw;
+        min-height: 100vh;
+        background-color: #413f45;
+        padding: 20px;
+        align-content: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
     .project-list-item {
         display: flex;
-        flex-direction: row;
-        justify-content: baseline;
-        
-        margin-left: 10px;
-        margin-right: 10px;
+        flex-direction: column;
+        justify-content: center;
+        border-style: solid;
+        justify-content: center;
 
-        background-color: #5B6065;
+        width: 100px;
+        height: 100px;
+    }
 
-        border-radius: 10px;
-
-        gap: 5px;
+    .project-name {
+        text-align: center;
     }
     
     .noProjectoMr {
@@ -34,15 +38,13 @@
     .project-archive {
         display: flex;
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
         background-color: #413f45;
         padding: 20px;
-        align-content: flex-start;
-        justify-content: left;
+        align-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         gap: 30px;
-
-        
     }
 
     .project-list-item {

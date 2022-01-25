@@ -4,12 +4,21 @@ import { NavLink } from "react-router-dom";
 import './ProjectArchive.css';
 
 // Projects Archive Page ---------------------------------------------------- //
+
+
 class ProjectArchive extends Component {
     render() {
         return (
             <div className="project-archive" id="project-archive">
                 <ProjectListItem name="Testing name" link="testing-link"/>
-                
+                <ProjectListItem name="Testing name" link="testing-link"/>
+                <ProjectListItem name="Testing name" link="testing-link"/>
+                <ProjectListItem name="Testing name" link="testing-link"/>
+                <ProjectListItem name="Testing name" link="testing-link"/>
+                <ProjectListItem name="Testing name" link="testing-link"/>
+                <ProjectListItem name="Testing name" link="testing-link"/>
+                <ProjectListItem name="Testing name" link="testing-link"/>
+                <ProjectListItem name="Testing name" link="testing-link"/>
             </div>
         );
     }
