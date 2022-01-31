@@ -17,11 +17,11 @@ jobs:
       - docker/check
       - docker/build:
           image: ethnelson/home-site
-          tag: latest
+          tag: dev
       - docker/push:
           digest-path: /tmp/digest.txt
           image: ethnelson/home-site
-          tag: latest
+          tag: dev
 
 
 
@@ -46,5 +46,5 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - dev
 
