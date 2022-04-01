@@ -60,11 +60,5 @@ class ProjectList extends Component {
         
 }
 
-/*
-<p class="noProjectoMr">
-                    dang, looks like I don't have any projects here rn
-                </p>
 
-
-*/
-export default ProjectArchive;
+export { ProjectArchive, ProjectList };

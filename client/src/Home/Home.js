@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
-import ProjectArchive from "./ProjectArchive";
+import { ProjectArchive } from "./ProjectArchive";
 
 
 import './Home.css';
