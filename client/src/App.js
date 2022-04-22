@@ -24,7 +24,9 @@ class App extends Component {
 class TestComp extends Component {
   render() {
     return(
-      <p>Testing page</p>
+      <div data-testid="projectTestPage">
+        <p>Testing page</p>
+      </div>
     )
   }
 }

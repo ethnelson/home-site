@@ -6,14 +6,17 @@ import { TestComp } from './App';
 import { ProjectList } from './Home/ProjectArchive';
 import App from './App';
 
-test('Full app rendering, to each page', () => {
+test('Full app rendering to front page', () => {
   render(<App />, {wrapper: MemoryRouter})
-  
   expect(screen.getByText(/My Name's Ethan/i)).toBeInTheDocument()
+})
 
-  const leftClick = {button: 0}
-  userEvent.click(screen.getByText(/Testing Name/i), leftClick)
-  expect(screen.getByText(/Testing page/i)).toBeInTheDocument()
+test('Render app, click on a project', async () => {
+  render(<App />, {wrapper: MemoryRouter})
+  const user = userEvent.setup()
+
+  await user.click(screen.getByText(/Testing Name/i))
+  expect(screen.getByTestId("projectTestPage")).toBeInTheDocument()
 })
 
 test('Project listing without items', () => {
