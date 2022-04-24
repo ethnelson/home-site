@@ -13,15 +13,18 @@
   "author": "Ethan Nelson",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "https": "^1.0.0"
   },
   "engines": {
-    "node": "16.9.1"
+    "node": "16.14.2"
   },
   "devDependencies": {
     "jest": "^27.5.1"
   },
   "jest": {
-    "modulePathIgnorePatterns": ["client"]
+    "modulePathIgnorePatterns": [
+      "client"
+    ]
   }
 }
